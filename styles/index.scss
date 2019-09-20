@@ -10,7 +10,46 @@ a{
   margin: 5px;
   color: black;
   width: 10%;
-  &:focus, &:hover{
+  &:hover{
     color: #a8eb12;
+  }
+}
+
+// This is a light bulb that Im building
+.light{
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bg_on{
+    background-color: white;
+  }
+  .circle{
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 50px;
+    box-shadow: black 0px 0px 5px;
+    transition: 0.5s;
+  }
+  .lightOn{
+    background-color: yellow;
+  }
+  .stick{
+    width: 50px;
+    height: 70px;
+    background-color: #646464;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .bottom{
+    width: 70px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 25px;
   }
 }
