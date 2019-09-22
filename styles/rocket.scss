@@ -6,7 +6,7 @@
 
 .left{
   font-family: 'Big Shoulders Display', cursive;
-  background-color: rgb(45, 170, 93);
+  background-color: #000000;
   color: white;
   position: fixed;
   top: 0;
@@ -37,5 +37,66 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.right{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  // background-color: #b6d3e7;
+  background-image: url(/space.jpg);
+  background-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;;
+  align-items: center;
+  .rocket{ //this is the rocket it self inside a container box and also with its pieces put together
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(18px);
+    transition: transform 10000ms;
+    .point{
+      width: 20px;
+      height: 20px;
+      background-color: #b42e2e;
+      transform: rotate(45deg);
+    }
+    .main_area{
+      width: 29px;
+      height: 100px;
+      background-color: rgb(116, 116, 116);
+      transform: translateY(-10px);
+      p{
+        transform: rotate(90deg);
+        font-size: 0.5em;
+        color: white;
+        span{
+          color: rgb(255, 1, 1);
+        }
+      }
+    }
+    .rocket_booster{
+      width: 40px;
+      height: 20px;
+      border-radius: 20px 20px 0 0;
+      background-color: #b42e2e;
+      transform: translateY(-18px);
+    }
+  }
+  .fly{ //This is to launch the rocket up
+    transform: translateY(-10000px);
+  }
+  .ground{
+    background-color: #000000;
+    height: 20px;
+    width: 100%;
   }
 }
