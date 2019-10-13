@@ -27,7 +27,7 @@
           align-items: center;
 }
 
-.left .state1 {
+.left .body_state1, .left .body_state2, .left .body_state3, .left .body_state4, .left .body_state5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,13 +43,13 @@
           align-items: center;
 }
 
-.left .state1 h1 {
+.left .body_state1 h1, .left .body_state1 h2, .left .body_state2 h1, .left .body_state2 h2, .left .body_state3 h1, .left .body_state3 h2, .left .body_state4 h1, .left .body_state4 h2, .left .body_state5 h1, .left .body_state5 h2 {
   margin-bottom: 100px;
   font-size: 4em;
   letter-spacing: 2px;
 }
 
-.left .state1 button {
+.left .body_state1 button, .left .body_state2 button, .left .body_state3 button, .left .body_state4 button, .left .body_state5 button {
   font-family: 'Big Shoulders Display', cursive;
   letter-spacing: 2px;
   font-size: 2em;
@@ -57,8 +57,12 @@
   border-radius: 25px;
 }
 
-.left .state1 button:hover {
+.left .body_state1 button:hover, .left .body_state2 button:hover, .left .body_state3 button:hover, .left .body_state4 button:hover, .left .body_state5 button:hover {
   cursor: pointer;
+}
+
+.left .state2, .left .state3, .left .state4, .left .state5 {
+  display: none;
 }
 
 .right {

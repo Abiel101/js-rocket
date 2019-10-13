@@ -10,13 +10,29 @@
 </head>
 <body>
 
-  <div class="left">
-    <div class="state1">
+  <div class="left"> <!-- This is the left side where the launch sequence will start and where the launch button and abort buttons are at. Also the count down will start here -->
+    <div class="body_state1">
       <h1>JS ROCKET LAUNCH</h1>
       <a href="#"><button onclick="launch();">Launch</button></a>
     </div>
+    <div class="state2 body_state2">
+      <h1>LAUNCH!</h1>
+    </div>
+    <div class="state3 body_state3">
+      <h1>COUNT DOWN</h1>
+      <h2>10</h2>
+      <a href="#"><button onclick="abort();">Abort</button></a>
+    </div>
+    <div class="state4 body_state4">
+      <h1>Try Again!</h1>
+      <a href="#"><button onclick="launch();">Try Again</button></a>
+    </div>
+    <div class="state5 body_state5">
+      <h1>Launch Failed</h1>
+    </div>
   </div>
-  <div class="right">
+
+  <div class="right"><!-- This is the rockets side where its launching from -->
     <div class="rocket" id="rocket">
       <div class="point"></div>
       <div class="main_area">
